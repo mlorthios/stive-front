@@ -5,15 +5,12 @@ import Graph1 from '../../assets/images/Graph1.png';
 
 const HomeContainer = () => {
   return (
-    <div className={'mx-16'}>
+    <div className={''}>
       <div className={'border-b border-semiwhite pb-8 flex justify-between items-center'}>
         <h1>Tableau de bord</h1>
         <Button variant={'blue'}>Ajouter</Button>
       </div>
-      <div
-        className={
-          'grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 2xl:space-x-2 xl:space-x-4 lg:space-x-1 md:space-x-6 space-x-3 py-8'
-        }>
+      <div className={'grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 py-8'}>
         <div
           className={
             'border border-semiwhite p-4 rounded-default flex w-fit items-center md:space-x-4 shadow-lg'
@@ -63,16 +60,28 @@ const HomeContainer = () => {
           </div>
         </div>
       </div>
-      <div className={'grid grid-cols-2 space-x-6 pb-8'}>
-        <div className={'p-4 border border-semiwhite shadow-lg rounded-default'}>
+      <div className={'grid grid-cols-2 space-x-8 pb-8'}>
+        <div className={'p-6 border border-semiwhite shadow-lg rounded-default'}>
           <div className={'flex flex-col space-y-1 mb-6'}>
             <h2>Pourcentage de vente </h2>
             <span>Les 7 derniers jours</span>
           </div>
-          <div className={'rounded-full'}>
+          <div className={'rounded-full pb-4'}>
             <img src={Graph1} className={'w-3/4'} alt="" />
           </div>
-          <div className={'flex justify-center border-t border-semiwhite py-4'}>
+          <div className={'flex justify-center border-t border-semiwhite pt-6 pb-2'}>
+            <span className={'text-center'}>Le vin blanc se vends le mieux</span>
+          </div>
+        </div>
+        <div className={'p-6 border border-semiwhite shadow-lg rounded-default'}>
+          <div className={'flex flex-col space-y-1 mb-6'}>
+            <h2>Pourcentage de vente </h2>
+            <span>Les 7 derniers jours</span>
+          </div>
+          <div className={'rounded-full pb-4'}>
+            <img src={Graph1} className={'w-3/4'} alt="" />
+          </div>
+          <div className={'flex justify-center border-t border-semiwhite pt-6 pb-2'}>
             <span className={'text-center'}>Le vin blanc se vends le mieux</span>
           </div>
         </div>
