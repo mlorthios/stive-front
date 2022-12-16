@@ -8,8 +8,8 @@ import { ReactComponent as DisconnectIcon } from '../assets/icons/Disconnect.svg
 
 const Layout = () => {
   return (
-    <div>
-      <nav className={'w-1/6 p-6 flex flex-col space-y-6'}>
+    <div className={'mt-14'}>
+      <nav className={'fixed space-y-6 w-[140px] px-5'}>
         <div className={'flex space-x-3 items-center'}>
           <HomeIcon className={'w-8'} />
           <a className={'font-bold'}>Accueil</a>
@@ -31,7 +31,9 @@ const Layout = () => {
           <a>Déconnexion</a>
         </div>
       </nav>
-      <Outlet />
+      <div className={'ml-[160px]'}>
+        <Outlet />
+      </div>
     </div>
   );
 };

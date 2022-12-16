@@ -5,8 +5,8 @@ import Graph1 from '../../assets/images/Graph1.png';
 
 const HomeContainer = () => {
   return (
-    <div className={'mx-16 w-5/6'}>
-      <div className={'border-b border-semiwhite py-8 flex justify-between items-center'}>
+    <div className={'mx-16'}>
+      <div className={'border-b border-semiwhite pb-8 flex justify-between items-center'}>
         <h1>Tableau de bord</h1>
         <Button variant={'blue'}>Ajouter</Button>
       </div>
