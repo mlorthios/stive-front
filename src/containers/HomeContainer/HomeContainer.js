@@ -70,7 +70,7 @@ const HomeContainer = () => {
             <img src={Graph1} className={'w-3/4'} alt="" />
           </div>
           <div className={'flex justify-center border-t border-semiwhite pt-6 pb-2'}>
-            <span className={'text-center'}>Le vin blanc se vends le mieux</span>
+            <span className={'text-center'}>Le vin blanc se vend le mieux</span>
           </div>
         </div>
         <div className={'p-6 border border-semiwhite shadow-lg rounded-default'}>
@@ -82,7 +82,7 @@ const HomeContainer = () => {
             <img src={Graph1} className={'w-3/4'} alt="" />
           </div>
           <div className={'flex justify-center border-t border-semiwhite pt-6 pb-2'}>
-            <span className={'text-center'}>Le vin blanc se vends le mieux</span>
+            <span className={'text-center'}>Le vin blanc se vend le mieux</span>
           </div>
         </div>
       </div>
