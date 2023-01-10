@@ -33,25 +33,25 @@ const Layout = () => {
               <div className="h-[100px] flex items-center border-b border-semiwhite px-8">
                 <img src={Logo} className={'object-cover'} alt="" />
               </div>
-              <div className="px-8 py-6 space-y-6">
+              <div className="px-8 py-6 space-y-8">
                 <div className={'flex space-x-3 items-center'}>
-                  <HomeIcon className={'w-8'} />
+                  <HomeIcon />
                   <a className={'font-bold'}>Accueil</a>
                 </div>
                 <div className={'flex space-x-3 items-center'}>
-                  <CartIcon className={'w-8'} />
+                  <CartIcon />
                   <a>Produits</a>
                 </div>
                 <div className={'flex space-x-3 items-center'}>
-                  <TransactionIcon className={'w-8'} />
+                  <TransactionIcon />
                   <a>Commandes</a>
                 </div>
                 <div className={'flex space-x-3 items-center'}>
-                  <SettingsIcon className={'w-8'} />
+                  <SettingsIcon />
                   <a>Paramètres</a>
                 </div>
                 <div className={'flex space-x-3 items-center'}>
-                  <DisconnectIcon className={'w-8'} />
+                  <DisconnectIcon />
                   <a>Déconnexion</a>
                 </div>
               </div>
