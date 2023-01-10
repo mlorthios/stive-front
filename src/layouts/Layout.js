@@ -27,12 +27,39 @@ const Layout = () => {
   return (
     <div className={''}>
       <Disclosure as="nav" className="fixed">
-        <div className={'border-r border-semiwhite md:fixed md:block hidden'}>
-          <div className={'border-b border-semiwhite w-screen bg-[#FFFFFF] z-20 flex items-center'}>
-            <div className={'px-8 border-r border-semiwhite py-6 w-[200px]'}>
-              <img src={Logo} className={'object-cover'} alt="" />
+        <div className={'md:fixed md:block hidden'}>
+          <div className={'w-screen  z-20 flex items-start'}>
+            <div className={'h-screen bg-[#FFFFFF] border-r border-semiwhite w-[200px]'}>
+              <div className="h-[100px] flex items-center border-b border-semiwhite px-8">
+                <img src={Logo} className={'object-cover'} alt="" />
+              </div>
+              <div className="px-8 py-6 space-y-8">
+                <div className={'flex space-x-3 items-center'}>
+                  <HomeIcon />
+                  <a className={'font-bold'}>Accueil</a>
+                </div>
+                <div className={'flex space-x-3 items-center'}>
+                  <CartIcon />
+                  <a>Produits</a>
+                </div>
+                <div className={'flex space-x-3 items-center'}>
+                  <TransactionIcon />
+                  <a>Commandes</a>
+                </div>
+                <div className={'flex space-x-3 items-center'}>
+                  <SettingsIcon />
+                  <a>Paramètres</a>
+                </div>
+                <div className={'flex space-x-3 items-center'}>
+                  <DisconnectIcon />
+                  <a>Déconnexion</a>
+                </div>
+              </div>
             </div>
-            <div className={'pl-6 pr-8  flex items-center w-full justify-between'}>
+            <div
+              className={
+                'pl-6 py- pr-8 h-[100px] bg-[#FFFFFF] flex items-center w-full justify-between border-b border-semiwhite'
+              }>
               <div className={'flex items-center'}>
                 <CloseLeftNav />
                 <form className={'relative ml-6'}>
@@ -137,29 +164,6 @@ const Layout = () => {
             ))}
           </div>
         </Disclosure.Panel>
-
-        <div className={'px-8 pt-6 space-y-6 h-screen md:w-[200px] border-r border-semiwhite'}>
-          <div className={'flex space-x-3 items-center'}>
-            <HomeIcon className={'w-8'} />
-            <a className={'font-bold'}>Accueil</a>
-          </div>
-          <div className={'flex space-x-3 items-center'}>
-            <CartIcon className={'w-8'} />
-            <a>Produits</a>
-          </div>
-          <div className={'flex space-x-3 items-center'}>
-            <TransactionIcon className={'w-8'} />
-            <a>Commandes</a>
-          </div>
-          <div className={'flex space-x-3 items-center'}>
-            <SettingsIcon className={'w-8'} />
-            <a>Paramètres</a>
-          </div>
-          <div className={'flex space-x-3 items-center'}>
-            <DisconnectIcon className={'w-8'} />
-            <a>Déconnexion</a>
-          </div>
-        </div>
       </Disclosure>
       <div className={'md:ml-[240px] md:pt-[120px]  ml-8 mr-8 py-8'}>
         <Outlet />
